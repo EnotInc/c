@@ -3,7 +3,7 @@
 Well, `c` is THE BEST cli tool to clear your terminal!
 When you launch `c`, you'll see your dude at the top of the terminal, so you won't feel so lonely
 
-## Instalation
+## Installation
 
 To use this piece of art, just execute the following commands:
 ```bash
@@ -34,3 +34,4 @@ c --dude <string>
 ```bash
 c --reset
 ```
+

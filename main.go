@@ -24,22 +24,22 @@ func main() {
 	config := getConfigPath()
 
 	if _, err := os.Stat(config); err != nil {
-		os.Create(config)
 		os.WriteFile(config, []byte(defaultDude), 0644)
 	}
 
 	var userDude string
 	var reset bool
 
-	flag.StringVar(&userDude, "dude", "", "set you dude")
-	flag.StringVar(&userDude, "d", "", "set you dude")
+	flag.StringVar(&userDude, "dude", "", "set your dude")
+	flag.StringVar(&userDude, "d", "", "set your dude")
 
-	flag.BoolVar(&reset, "reset", false, "reset you dude to default (use this flag on it's own)")
+	flag.BoolVar(&reset, "reset", false, "reset your dude to default (use this flag on it's own)")
 
 	flag.Parse()
 
 	if reset {
 		os.WriteFile(config, []byte(defaultDude), 0644)
+		fmt.Print("dude reset to default")
 		return
 	}
 
