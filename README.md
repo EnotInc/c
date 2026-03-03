@@ -8,6 +8,7 @@ When you launch `c`, you'll see your dude at the top of the terminal, so you won
 To use this piece of art, just execute the following commands:
 ```bash
 git clone https://github.com/EnotInc/c.git
+cd ./c
 go install
 ```
 
